@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VigiLearn MedDRA Browser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for enterprise feel */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #99bce8; 
+        border: 2px solid #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #004b87; 
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        background-color: #f4f4f4;
+        color: #333;
+        overflow: hidden; /* App handles scrolling */
+      }
+      .argus-header {
+        background: linear-gradient(to bottom, #004b87 0%, #003366 100%);
+      }
+      .argus-panel-header {
+        background: linear-gradient(to bottom, #e3efff 0%, #d1e0f7 100%);
+        color: #004b87;
+        font-weight: bold;
+        border-bottom: 1px solid #99bce8;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

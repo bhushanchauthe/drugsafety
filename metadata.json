@@ -1,0 +1,5 @@
+{
+  "name": "VigiLearn MedDRA Browser Version 1",
+  "description": "A high-fidelity Oracle Argus Safety simulator for Pharmacovigilance training, featuring India-specific adverse event data and AI-assisted coding.",
+  "requestFramePermissions": []
+}
